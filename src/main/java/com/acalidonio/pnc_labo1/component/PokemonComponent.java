@@ -2,6 +2,7 @@ package com.acalidonio.pnc_labo1.component;
 
 import com.acalidonio.pnc_labo1.domain.entities.Pokemon;
 import com.acalidonio.pnc_labo1.service.PokemonService;
+import org.jspecify.annotations.NonNull;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -16,7 +17,7 @@ public class PokemonComponent implements CommandLineRunner {
     }
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String @NonNull ... args) {
         System.out.println("Filtro por Tipo: Planta");
         printResult(pokemonService.findByType("Planta"));
 
