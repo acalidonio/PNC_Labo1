@@ -10,7 +10,7 @@ import java.util.List;
 @Getter
 @Component
 public class PokemonList {
-    private List<Pokemon> pokemonList;
+    private final List<Pokemon> pokemonList;
     public PokemonList() {
         this.pokemonList =  new ArrayList<>();
 
